@@ -4,9 +4,10 @@
   }
 
   .container-flex {
+    max-width: 1440px;
     margin: 15vh auto 10vh auto;
     display: grid;
-    grid-template-columns: repeat(2, 70vh);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: [start] 50px [row1] 10px [row2] 1fr [row3] 1fr [row4] 1fr [end];
     justify-content: center;
     align-items:center;

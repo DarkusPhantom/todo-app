@@ -55,6 +55,31 @@ a {
   flex-direction:column;
 }
 
+.error {
+  border: 2px solid var(--color-red);
+}
+
+.input-error {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  max-width: 100%;
+}
+
+.input-icon {
+  width: 87%;
+}
+
+.input-error-text {
+  margin: 5px auto 0 auto;
+  color: var(--color-red);
+  font-size: .8em;
+  font-weight: var(--font-weight-regular);
+  text-align: right;
+}
+
+/*Intro*/
 .intro {
  margin: 0 0 7vh 0;
  text-align: center;
@@ -93,21 +118,32 @@ a {
 }
 
 .signup-form {
-  height: 80vh;
+  height: 85vh;
   max-height: 420px;
+  padding-top: 1em;
   background-color: var(--color-white);
   border-radius: 7px;
   box-shadow: 0 6.5px 2px var(--color-gray);
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  align-items: center;
 }
 
-.signup-form input {
-  width: 75%;
+.signup-form-input {
+  width: 85%;
+  height: 100%;
+  margin: 10px auto;
+  max-height: 50px;
+  position: relative;
+}
+
+.signup-form-input input {
+  width: 100%;
+  height: inherit;
   padding: 15px 18px;
   border-radius: 3px;
   border: 1px solid var(--color-grayish-blue);
+  /*border: none; Insertar cuando marque error*/
   color: var(--color-darkgray);
   font-weight: var(--font-weight-semi-bold);
 }
@@ -125,6 +161,7 @@ a {
 
 .signup-form button {
   width: 85%;
+  margin: 5px auto;
   padding: 1.01em 15px 15px 15px;
   background-color: var(--color-green);
   color: var(--color-white);
@@ -139,14 +176,9 @@ a {
   background-color: var(--color-darkgreen);
 }
 
-.signup-form input,
-.signup-form button {
-  margin: 7px auto;
-}
-
 .form-text {
   width: 75%;
-  margin: 5px auto;
+  margin: auto;
   color: var(--color-grayish-blue);
   font-weight: var(--font-weight-semi-bold); 
   text-align:center;
