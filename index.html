@@ -27,33 +27,36 @@
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </p>
       </div>
-      <form class="signup-form" action="">
+      <form id="form-signup" class="signup-form" action="">
         <div class="signup-form-input">
           <input type="text" id="first-name" placeholder="First Name">
-          <!--<span class="input-error">
+          <span class="input-error hidden">
             <img class="input-icon" src="images/icon-error.svg" alt="">
           </span>
-          <p class="input-error-text">First Name cannot be empty</p>-->
+          <p class="input-error-text hidden"><em>First Name cannot be empty</em></p>
         </div>
         <div class="signup-form-input">
           <input type="text" id="last-name" placeholder="Last Name">
           <span class="input-error">
             <img class="input-icon" src="" alt="">
           </span>
+          <p class="input-error-text hidden"><em>Last Name cannot be empty</em></p>
         </div>
         <div class="signup-form-input">
           <input type="email" id="email" placeholder="Email Address">
           <span class="input-error">
             <img class="input-icon" src="" alt="">
           </span>
+          <p class="input-error-text hidden"><em>Looks like this is not an email</em></p>
         </div>
         <div class="signup-form-input">
           <input type="password" id="password" placeholder="Password">
           <span class="input-error">
             <img class="input-icon" src="" alt="">
           </span>
+          <p class="input-error-text hidden"><em>Password cannot be empty</em></p>
         </div>
-        <button class="btn form-btn">claim your free trial</button>
+        <button class="btn form-btn" id="send" type="submit">claim your free trial</button>
         <footer class= "form-text">
           <p>By clicking the buttom you are agreeing to our <a href="#">Terms and Services</a>
           </p>
@@ -69,7 +72,7 @@
     </p>
   </footer>
 
-  <link rel="stylesheet" href="./assets/styles.css">
-  <link rel="stylesheet" href="./assets/responsive.css">
+  <link rel="stylesheet" href="assets/styles.min.css">
+  <script src="js/app.js"></script>
 </body>
 </html>

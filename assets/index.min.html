@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=icon type=image/png sizes=32x32 href=./images/favicon-32x32.png>
+<title>Frontend Mentor | Intro component with sign up form</title>
+<style>.attribution{font-size:11px;text-align:center}.attribution a{color:#3d51a2}</style>
+</head>
+<body>
+<div class=container-flex>
+<section class=intro>
+<h1 class=intro-title>Learn to code by watching others</h1>
+<p class=intro-text>See how experience developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers thinks is invaluable</p>
+</section>
+<section class=signup>
+<div class=signup-box>
+<p class=signup-box-text>
+<span>Try it free 7 days</span> then $20/mo. thereafter
+</p>
+</div>
+<form id=form-signup class=signup-form action="">
+<div class=signup-form-input>
+<input id=first-name placeholder="First Name">
+<span class="input-error hidden">
+<img class=input-icon src=images/icon-error.svg alt="">
+</span>
+<p class="input-error-text hidden"><em>First Name cannot be empty</em></p>
+</div>
+<div class=signup-form-input>
+<input id=last-name placeholder="Last Name">
+<span class=input-error>
+<img class=input-icon src="" alt="">
+</span>
+<p class="input-error-text hidden"><em>Last Name cannot be empty</em></p>
+</div>
+<div class=signup-form-input>
+<input type=email id=email placeholder="Email Address">
+<span class=input-error>
+<img class=input-icon src="" alt="">
+</span>
+<p class="input-error-text hidden"><em>Looks like this is not an email</em></p>
+</div>
+<div class=signup-form-input>
+<input type=password id=password placeholder=Password>
+<span class=input-error>
+<img class=input-icon src="" alt="">
+</span>
+<p class="input-error-text hidden"><em>Password cannot be empty</em></p>
+</div>
+<button class="btn form-btn" id=send type=submit>claim your free trial</button>
+<footer class=form-text>
+<p>By clicking the buttom you are agreeing to our <a href=#>Terms and Services</a>
+</p>
+</footer>
+</form>
+</section>
+</div>
+<footer class=footer-page>
+<p class=attribution>
+Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target=_blank>Frontend Mentor</a>. Coded by <a href=https://github.com/DarkusPhantom target=_blank>Luis Rodriguez - DarkusPhantom</a>.
+</p>
+</footer>
+<link rel=stylesheet href=assets/styles.min.css>
+<script src=js/app.js></script>
+</body>
+</html>

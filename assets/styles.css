@@ -55,12 +55,21 @@ a {
   flex-direction:column;
 }
 
+.hidden {
+  display:none;
+}
+
 .error {
+  margin-bottom: 20px!important;
   border: 2px solid var(--color-red);
+  border-radius: 5px;
+}
+
+.error ::-webkit-input-placeholder {
+  color: var(--color-red)!important;
 }
 
 .input-error {
-  display: none;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -72,9 +81,9 @@ a {
 }
 
 .input-error-text {
-  margin: 5px auto 0 auto;
+  margin: 5px 0 0 0;
   color: var(--color-red);
-  font-size: .8em;
+  font-size: .59em;
   font-weight: var(--font-weight-regular);
   text-align: right;
 }
@@ -118,8 +127,8 @@ a {
 }
 
 .signup-form {
-  height: 85vh;
-  max-height: 420px;
+  height: 100%;
+  max-height: 470px;
   padding-top: 1em;
   background-color: var(--color-white);
   border-radius: 7px;
@@ -162,7 +171,7 @@ a {
 .signup-form button {
   width: 85%;
   margin: 5px auto;
-  padding: 1.01em 15px 15px 15px;
+  padding: 1.25em 15px 10px 15px;
   background-color: var(--color-green);
   color: var(--color-white);
   border: none;
@@ -170,6 +179,7 @@ a {
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: var(--font-weight-semi-bold);
+  letter-spacing: 1.0px;
 }
 
 .signup-form button:hover {
