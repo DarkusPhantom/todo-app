@@ -65,7 +65,7 @@ a {
   border-radius: 5px;
 }
 
-.error ::-webkit-input-placeholder {
+.error input::placeholder {
   color: var(--color-red)!important;
 }
 
@@ -163,7 +163,7 @@ a {
   box-shadow: 0 0 1px var(--color-darkgray);
 }
 
-::-webkit-input-placeholder {
+.signup-form input::placeholder {
   color: var(--color-darkgray);
   font-weight: var(--font-weight-bold);
 }
