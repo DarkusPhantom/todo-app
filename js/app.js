@@ -7,7 +7,6 @@
   const inputPassword = document.getElementById('password')
   const btnSend = document.getElementById('send')
 
-
   //EventListener
   inputFirstName.addEventListener('blur', validateField)
 
@@ -32,7 +31,6 @@
     const inputField = input.parentElement
     const inputIconError = inputField.children[1]
     const inputTextError = inputField.children[2]
-
 
     if(field.value.length > 0) {
       inputField.classList.remove('error')

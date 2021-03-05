@@ -1,0 +1,26 @@
+.signup-box {
+  padding: 15px 1em;
+  margin-bottom: 5vh;
+  background-color: var(--color-blue);
+  text-align:center;
+  border-radius: 7px;
+  box-shadow: 0 7px 2px var(--color-gray);
+}
+
+.signup-box-text {
+  width: 70%;
+  margin: auto; 
+  font-weight: var(--font-weight-regular);
+  line-height:1.5;
+}
+
+.signup-box-text span {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+@media screen and (min-width: 1024px) {
+  .signup-box {
+    margin-bottom: 20px;
+    padding: 20px 1em 15px 1em;
+  }
+}

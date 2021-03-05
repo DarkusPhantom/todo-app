@@ -1,0 +1,41 @@
+.signup-form {
+  height: 100%;
+  max-height: 470px;
+  padding-top: 1em;
+  background-color: var(--color-white);
+  border-radius: 7px;
+  box-shadow: 0 6.5px 2px var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form-input {
+  width: 85%;
+  height: 100%;
+  margin: 10px auto;
+  max-height: 50px;
+  position: relative;
+}
+
+.signup-form-input input {
+  width: 100%;
+  height: inherit;
+  padding: 15px 18px;
+  border-radius: 3px;
+  border: 1px solid var(--color-grayish-blue);
+  /*border: none; Insertar cuando marque error*/
+  color: var(--color-darkgray);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.signup-form input:focus {
+  border: 1px solid var(--color-grayish-blue);
+  border-radius: 5px;
+  box-shadow: 0 0 1px var(--color-darkgray);
+}
+
+.signup-form input::placeholder {
+  color: var(--color-darkgray);
+  font-weight: var(--font-weight-bold);
+}

@@ -1,0 +1,33 @@
+/*Intro*/
+.intro {
+ margin: 0 0 7vh 0;
+ text-align: center;
+}
+
+.intro-title {
+  margin: 0 auto 1em auto;
+  font-size: 1.8em;
+  font-weight: var(--font-weight-bold);
+}
+
+.intro-text {
+  font-size: 1.13em;
+  font-weight:400;
+  line-height:1.6;
+}
+
+@media screen and (min-width: 1024px) {
+  .intro {
+    grid-row: row2 / span end;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+  }
+
+  .intro-title {
+    font-size: 3.4em;
+    letter-spacing:  -2px;
+    margin-bottom: 25px;
+    
+  }
+}

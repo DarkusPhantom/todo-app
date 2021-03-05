@@ -1,0 +1,23 @@
+.form-text {
+  width: 75%;
+  margin: auto;
+  color: var(--color-grayish-blue);
+  font-weight: var(--font-weight-semi-bold); 
+  text-align:center;
+  font-size: .7em;
+  line-height: 1.5;
+}
+
+.form-text a {
+  color: var(--color-red);
+  font-size: 1em;
+  font-weight: var(--font-weight-bold);
+}
+
+@media screen and (min-width: 1024px) {
+  .form-text {
+    width: 80%;
+    margin-top: 0;
+  }
+
+}

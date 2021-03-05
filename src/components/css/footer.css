@@ -1,0 +1,9 @@
+.footer-page {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
