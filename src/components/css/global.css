@@ -21,6 +21,7 @@
   --color-gray: hsl(0deg, 1%, 24%, 0.39);
   --color-darkgray: hsl(0deg, 1%, 24%, .79);
   --color-darkgreen: hsl(154deg, 61%, 44%);
+  --color-lightgreen: hsl(154deg, 61%, 44%, 75%);
 
   --font: 'Poppins', sans-serif;
 }
@@ -55,39 +56,6 @@ a {
   flex-direction:column;
 }
 
-.hidden {
-  display:none;
-}
-
-.error {
-  margin-bottom: 20px!important;
-  border: 2px solid var(--color-red);
-  border-radius: 5px;
-}
-
-.error input::placeholder {
-  color: var(--color-red)!important;
-}
-
-.input-error {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  max-width: 100%;
-}
-
-.input-icon {
-  width: 87%;
-}
-
-.input-error-text {
-  margin: 5px 0 0 0;
-  color: var(--color-red);
-  font-size: .59em;
-  font-weight: var(--font-weight-regular);
-  text-align: right;
-}
-
 @media screen and (min-width: 1024px) {
   body {
     background-image: url('../images/bg-intro-desktop.png');
@@ -98,7 +66,8 @@ a {
     margin: 15vh auto 10vh auto;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: [start] 50px [row1] 10px [row2] 1fr [row3] 1fr [row4] 1fr [end];
+/*    grid-template-rows: [start] minmax(50px,60px) [row1] 10px [row2] 1fr [row3] 1fr [row4] 1fr [end];*/
+    grid-template-rows: [start] 100px [row1] 1fr [row2] 100px [end];
     justify-content: center;
     align-items:center;
   }

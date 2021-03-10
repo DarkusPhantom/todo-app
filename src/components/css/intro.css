@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 1024px) {
   .intro {
-    grid-row: row2 / span end;
+    grid-row: row1 / span row2;
     text-align: left;
     width: 90%;
     margin: auto;
@@ -28,6 +28,5 @@
     font-size: 3.4em;
     letter-spacing:  -2px;
     margin-bottom: 25px;
-    
   }
 }

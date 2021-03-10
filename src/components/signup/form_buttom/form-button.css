@@ -13,7 +13,7 @@
 }
 
 .signup-form button:hover {
-  background-color: var(--color-darkgreen);
+  background-color: var(--color-lightgreen);
 }
 
 @media screen and (min-width: 1024px) {

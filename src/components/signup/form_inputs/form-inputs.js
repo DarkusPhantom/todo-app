@@ -1,15 +1,12 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import './form-inputs.css'
+import ValidateField from './validateInputs'
 
-function SignupForm({type, id, placeholder, error_text}) {
+function SignupForm({type, id, placeholder, dataAttribute}) {
   return (
     <Fragment>
       <div className="signup-form-input">
-        <input type={type} id={id} placeholder={placeholder} />
-        <span className="input-error hidden">
-          <img className="input-icon" src="images/icon-error.svg" alt="" />
-        </span>
-        <p className="input-error-text hidden"><em>{error_text}</em></p>
+        <input type={type} id={id} placeholder={placeholder} onBlur={ValidateField} dataattribute={dataAttribute} />
       </div>
     </Fragment>
   );

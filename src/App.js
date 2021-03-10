@@ -4,7 +4,7 @@ import Signup from './components/signup/signup.js'
 
 function App() {
   return (
-    <div class="container-flex">
+    <div className="container-flex">
       <Intro />
       <Signup />
     </div>
