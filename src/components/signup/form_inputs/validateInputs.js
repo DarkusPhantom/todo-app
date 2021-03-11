@@ -1,5 +1,3 @@
-import dataInputs from './dataInputs'
-
 function ValidateField(e) {
   const input = e.target
   const inputField = input.parentElement
