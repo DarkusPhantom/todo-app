@@ -1,13 +1,13 @@
-import React from 'react'
-import Intro from './components/intro.js'
-import Signup from './components/signup/signup.js'
+import React, { Fragment } from "react";
+import Intro from "./components/intro.js";
+import Signup from "./components/signup/signup.js";
 
 function App() {
   return (
-    <div className="container-flex">
+    <Fragment>
       <Intro />
       <Signup />
-    </div>
+    </Fragment>
   );
 }
 

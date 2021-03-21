@@ -1,40 +1,64 @@
-import dataInputs from './dataInputs'
+import iconError from "../../images/icon-error.svg";
 
-function ValidateField(e) {
-  const input = e.target
-  const inputField = input.parentElement
+const ValidateField = ({ target: { value, placeholder, parentElement } }) => {
+  const input = parentElement;
 
-  if(input.value.length > 0) {
-    inputField.classList.remove('error')
+  if (value === null || value.length === 0) {
+    showError(input, placeholder);
   } else {
-    inputField.classList.add('error')
-    const error = createError(input.placeholder)
-    error.forEach( (err) => inputField.appendChild(err) )
+    removeError(input);
   }
+};
 
-  function createError(inputPlaceholder) {
-    const span = document.createElement('span')
-    const img = document.createElement('img')
-    const p = document.createElement('p')
-    const em = document.createElement('em')
+const showError = (input, placeholder) => {
+  const inputErrorExist = input.classList.contains("error");
 
-    span.className = 'input-error';
-    img.className = 'input-icon';
-    p.className = 'input-error-text'
-
-    img.setAttribute('src','../../images/icon-error.svg')
-
-    inputPlaceholder === 'Email' ? em.innerText = `Looks like this is not an ${inputPlaceholder}` :  em.innerText = `${inputPlaceholder} cannot be empty`
-
-    span.appendChild(img)
-    p.appendChild(em)
-
-    const error = []
-    error.push(span)
-    error.push(p)
-
-    return error;
+  if (!inputErrorExist) {
+    input.classList.add("error");
+    createErrorIcon(input);
+    createErrorText(input, placeholder);
   }
-}
+};
 
-export default ValidateField
+const createErrorIcon = (input) => {
+  const img = document.createElement("img");
+  const div = document.createElement("div");
+
+  img.className = "input-icon";
+  img.setAttribute("src", iconError);
+
+  div.className = "input-error";
+  div.appendChild(img);
+  input.appendChild(div);
+};
+
+const createErrorText = (input, placeholder) => {
+  const p = document.createElement("p");
+  const em = document.createElement("em");
+
+  //Crea el texto de error
+  placeholder === "Email"
+    ? (em.innerText = `Looks like this is not an ${placeholder}`)
+    : (em.innerText = `${placeholder} cannot be empty`);
+
+  //Coloca el texto de error en la etiqueta <p>
+  p.className = "input-error-text";
+  p.appendChild(em);
+
+  //Coloca el parrafo debajo del input
+  input.appendChild(p);
+};
+
+const removeError = (input) => {
+  const inputErrorExist = input.classList.contains("error");
+  if (inputErrorExist) {
+    for (var i = input.children.length - 1; i >= 0; i--) {
+      if (i > 0) {
+        input.children[i].remove();
+      }
+    }
+    input.classList.remove("error");
+  }
+};
+
+export { ValidateField as default, removeError };
