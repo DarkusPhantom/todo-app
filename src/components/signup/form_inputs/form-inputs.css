@@ -1,15 +1,15 @@
 .hidden {
-  display:none;
+  display: none;
 }
 
 .error {
-  margin-bottom: 25px!important;
-  border: 2px solid var(--color-red)!important;
+  margin-bottom: 25px !important;
+  border: 2px solid var(--color-red) !important;
   border-radius: 5px;
 }
 
 .error input::placeholder {
-  color: var(--color-red)!important;
+  color: var(--color-red) !important;
 }
 
 .input-error {
@@ -26,7 +26,7 @@
 .input-error-text {
   margin: 8px 0 0 0;
   color: var(--color-red);
-  font-size: .68em;
+  font-size: 0.68em;
   font-weight: var(--font-weight-regular);
   text-align: right;
 }
@@ -63,6 +63,7 @@
 
 .signup-form input:focus {
   box-shadow: 0 0 1px var(--color-darkgray);
+  border: none;
 }
 
 .signup-form input::placeholder {
