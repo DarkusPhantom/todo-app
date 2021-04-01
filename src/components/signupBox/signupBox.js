@@ -1,5 +1,5 @@
-import React from 'react'
-import './signup-box.css'
+import React from "react";
+import "./signupBox.css";
 
 function SignupBox() {
   return (

@@ -1,7 +1,0 @@
-@media screen and (min-width: 1024px) {
-  .signup {
-    grid-row: start / span end;
-    width: 85%;
-    margin: auto;
-  }
-}

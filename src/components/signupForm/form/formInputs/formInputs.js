@@ -1,21 +1,19 @@
 import React, { Fragment } from "react";
-import "./form-inputs.css";
-import ValidateField from "./validateInputs";
+import "./formInputs.css";
 
-function SignupForm({ type, id, placeholder, dataAttribute }) {
+function FormInputs({ type, id, className, placeholder }) {
   return (
     <Fragment>
       <div className="signup-form-input">
         <input
           type={type}
           id={id}
+          className={className}
           placeholder={placeholder}
-          onBlur={ValidateField}
-          data-attribute={dataAttribute}
         />
       </div>
     </Fragment>
   );
 }
 
-export default SignupForm;
+export default FormInputs;

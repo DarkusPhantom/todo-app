@@ -1,10 +1,6 @@
 {
-<<<<<<< HEAD
-  "name": "task_list",
-=======
   "homepage": ".",
   "name": "TodoApp",
->>>>>>> 33b899e... Solucionando issues:
   "version": "0.1.0",
   "private": false,
   "dependencies": {

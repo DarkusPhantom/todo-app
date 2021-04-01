@@ -2,26 +2,26 @@ const dataInputs = [
   {
     type: "text",
     id_input: "first-name",
+    className: "input",
     placeholder: "First Name",
-    dataAttribute: 0,
   },
   {
     type: "text",
     id_input: "last-name",
+    className: "input",
     placeholder: "Last Name",
-    dataAttribute: 0,
   },
   {
     type: "email",
     id_input: "email",
+    className: "input",
     placeholder: "Email",
-    dataAttribute: 0,
   },
   {
     type: "password",
     id_input: "password",
+    className: "input",
     placeholder: "Password",
-    dataAttribute: 0,
   },
 ];
 export default dataInputs;

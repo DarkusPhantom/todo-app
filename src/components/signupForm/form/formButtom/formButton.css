@@ -1,19 +1,22 @@
 .signup-form button {
   width: 85%;
-  margin: 5px auto;
+  margin: auto;
   padding: 1.25em 15px 10px 15px;
   background-color: var(--color-green);
   color: var(--color-white);
   border: none;
-  border-bottom: 4px solid var(--color-darkgreen); 
+  border-bottom: 4px solid var(--color-darkgreen);
   border-radius: 5px;
+  outline: none;
   text-transform: uppercase;
   font-weight: var(--font-weight-semi-bold);
-  letter-spacing: 1.0px;
+  letter-spacing: 1px;
+  transition: 0.25s;
 }
 
 .signup-form button:hover {
   background-color: var(--color-lightgreen);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {

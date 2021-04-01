@@ -2,20 +2,23 @@
   width: 75%;
   margin: auto;
   color: var(--color-grayish-blue);
-  font-weight: var(--font-weight-semi-bold); 
-  text-align:center;
-  font-size: .7em;
-  line-height: 1.5;
+  font-weight: var(--font-weight-semi-bold);
+  text-align: center;
+  line-height: 2;
+}
+
+.form-text p,
+.form-text a {
+  font-size: 0.65rem;
 }
 
 .form-text a {
   color: var(--color-red);
-  font-size: 1em;
   font-weight: var(--font-weight-bold);
 }
 
 .form-text a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1024px) {
@@ -24,4 +27,8 @@
     margin-top: 0;
   }
 
+  .form-text p,
+  .form-text a {
+    font-size: 0.5rem;
+  }
 }

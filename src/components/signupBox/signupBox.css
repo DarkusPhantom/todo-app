@@ -1,17 +1,19 @@
 .signup-box {
+  width: 100%;
   padding: 15px 1em;
-  margin-bottom: 5vh;
+  margin: 0 auto 5vh auto;
   background-color: var(--color-blue);
-  text-align:center;
+  text-align: center;
   border-radius: 7px;
   box-shadow: 0 7px 2px var(--color-gray);
 }
 
 .signup-box-text {
-  width: 70%;
-  margin: auto; 
+  width: inherit;
+  margin: auto;
+  font-size: 0.8rem;
   font-weight: var(--font-weight-regular);
-  line-height:1.5;
+  line-height: 1.5;
 }
 
 .signup-box-text span {
@@ -20,7 +22,10 @@
 
 @media screen and (min-width: 1024px) {
   .signup-box {
-    margin-bottom: 20px;
-    padding: 20px 1em 15px 1em;
+    grid-area: promo;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 0 20px 0;
+    padding: 15px 0;
   }
 }
