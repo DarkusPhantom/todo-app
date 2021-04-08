@@ -24,6 +24,9 @@
   --color-lightgreen: hsl(154deg, 61%, 44%, 75%);
 
   --font: "Poppins", sans-serif;
+
+  --background-desktop: url("../images/bg-intro-desktop.png");
+  --background-mobile: url("../images/bg-intro-mobile.png");
 }
 
 /*Fonts*/
@@ -39,7 +42,7 @@
 body {
   font-family: var(--font);
   font-size: var(--font-size-medium);
-  background: url("./images/bg-intro-mobile.png") no-repeat var(--color-red);
+  background: var(--background-mobile) no-repeat var(--color-red);
   background-position: top center;
   color: var(--color-white);
   margin: 0;
@@ -51,7 +54,6 @@ a {
 }
 
 .container-flex {
-  /*background-color: hsl(154deg, 61%, 44%, 75%);*/
   width: 85%;
   max-width: 555px;
   margin: 15vh auto;
@@ -63,7 +65,7 @@ a {
   body {
     background-position: -25px -60px;
     background-repeat: repeat;
-    background-image: url("./images/bg-intro-desktop.png");
+    background-image: var(--background-desktop);
     /*    overflow: hidden; */
   }
   .container-flex {

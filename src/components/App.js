@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import Intro from "./components/intro/intro.js";
-import Signup from "./components/signupForm/signupForm";
-import SignupBox from "./components/signupBox/signupBox";
+import Intro from "./intro/intro.js";
+import Signup from "./signupForm/signupForm";
+import SignupBox from "./signupBox/signupBox";
 
 function App() {
   return (
